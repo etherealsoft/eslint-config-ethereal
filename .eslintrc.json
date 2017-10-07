@@ -1,0 +1,11 @@
+{
+  "root": true,
+  "extends": [
+    "./es2015.js",
+    "./node.js"
+  ],
+  "rules": {
+    "no-sync": "off",
+    "sort-keys": "off"
+  }
+}

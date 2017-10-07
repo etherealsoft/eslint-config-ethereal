@@ -1,0 +1,58 @@
+{
+  "name": "eslint-config-ethereal",
+  "version": "1.0.0",
+  "description": "Recommended eslint configurations.",
+  "author": "Stephen M. Senesac <stephen.senesac@ethereal-soft.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/etherealsoft/eslint-config-ethereal.git"
+  },
+  "keywords": [
+    "eslint",
+    "config",
+    "sharable"
+  ],
+  "main": "es5.js",
+  "files": [
+    "lib/**/*.js",
+    "rules/**/*.js",
+    "es5.js",
+    "es2015.js",
+    "es2016.js",
+    "es2017.js",
+    "babel-es2015.js",
+    "babel-es2016.js",
+    "babel-es2017.js",
+    "babel-stage-2.js",
+    "node.js",
+    "react.js",
+    "jsdoc.js"
+  ],
+  "engines": {
+    "node": ">=6.11.0"
+  },
+  "peerDependencies": {
+    "babel-eslint": "8.0.x",
+    "eslint": "4.8.x",
+    "eslint-plugin-babel": "4.1.x",
+    "eslint-plugin-import": "2.7.x",
+    "eslint-plugin-react": "7.4.x"
+  },
+  "devDependencies": {
+    "babel-eslint": "~8.0.1",
+    "eslint": "~4.8.0",
+    "eslint-plugin-babel": "~4.1.2",
+    "eslint-plugin-import": "~2.7.0",
+    "eslint-plugin-react": "~7.4.0",
+    "lodash": "~4.17.4",
+    "mocha": "~4.0.1"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "test": "mocha ./tests/**/*.test.js",
+    "check": "npm run lint && npm test",
+    "prepublish": "npm run check"
+  }
+}
