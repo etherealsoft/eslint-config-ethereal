@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-ethereal",
+  "name": "@ethereal-soft/eslint-config-ethereal",
   "version": "1.0.0",
   "description": "Recommended eslint configurations.",
   "author": "Stephen M. Senesac <stephen.senesac@ethereal-soft.com>",
