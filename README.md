@@ -1,10 +1,10 @@
-[![npm](https://img.shields.io/npm/v/eslint-config-ethereal.svg?style=flat-square)](https://www.npmjs.com/package/@ethereal-soft/eslint-config-ethereal)
-[![License](https://img.shields.io/npm/l/eslint-config-ethereal.svg?style=flat-square)](https://github.com/etherealsoft/eslint-config-ethereal/blob/master/LICENSE)
-[![Travis branch](https://img.shields.io/travis/etherealsoft/eslint-config-ethereal/master.svg?style=flat-square)](https://travis-ci.org/etherealsoft/eslint-config-ethereal)
+![npm](https://img.shields.io/npm/v/@ethereal-soft/eslint-config-ethereal.svg?style=flat-square)
+![license](https://img.shields.io/npm/l/@ethereal-soft/eslint-config-ethereal.svg?style=flat-square)
+![build](https://img.shields.io/travis/etherealsoft/eslint-config-ethereal/master.svg?style=flat-square)
 
-[![Dependency Status](https://img.shields.io/david/etherealsoft/eslint-config-ethereal.svg?style=flat-square)](https://david-dm.org/etherealsoft/eslint-config-ethereal)
-[![devDependency Status](https://img.shields.io/david/dev/etherealsoft/eslint-config-ethereal.svg?style=flat-square)](https://david-dm.org/etherealsoft/eslint-config-ethereal#info=devDependencies)
-[![peerDependency Status](https://img.shields.io/david/peer/etherealsoft/eslint-config-ethereal.svg?style=flat-square)](https://david-dm.org/etherealsoft/eslint-config-ethereal#info=peerDependencies)
+![dependencies](https://img.shields.io/david/etherealsoft/eslint-config-ethereal.svg?style=flat-square)
+![dev dependencies](https://img.shields.io/david/dev/etherealsoft/eslint-config-ethereal.svg?style=flat-square)
+![peer dependencies](https://img.shields.io/david/peer/etherealsoft/eslint-config-ethereal.svg?style=flat-square)
 
 ## Synopsis
 
