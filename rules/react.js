@@ -110,7 +110,7 @@ module.exports = {
     'react/no-unused-prop-types': 'off',
 
     // Prevent definitions of unused state
-    // TODO: Add documentation url when available
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unused-state.md
     'react/no-unused-state': 'error',
 
     // Prevent usage of setState in componentWillUpdate
