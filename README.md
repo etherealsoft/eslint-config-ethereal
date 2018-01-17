@@ -22,17 +22,17 @@ These configurations represent a set of standards that when followed are intende
 
 This package exports the following ESLint configurations.
 
-* [ethereal](#ethereal) - default config, ECMAScript 5
-* [ethereal/es2015](#ethereales2015) - ECMAScript 2015
-* [ethereal/es2016](#ethereales2016) - ECMAScript 2016
-* [ethereal/es2017](#ethereales2017) - ECMAScript 2017
-* [ethereal/babel-es2015](#etherealbabel-es2015) - Babel ECMAScript 2015
-* [ethereal/babel-es2016](#etherealbabel-es2016) - Babel ECMAScript 2016
-* [ethereal/babel-es2017](#etherealbabel-es2017) - Babel ECMAScript 2017
-* [ethereal/babel-stage-2](#etherealbabel-stage-2) - Babel ECMAScript Stage 2
-* [ethereal/node](#etherealnode) - Node.js
-* [ethereal/react](#etherealreact) - React.js/JSX
-* [ethereal/jsdoc](#etherealjsdoc) - JSDoc
+* [@ethereal-soft/eslint-config-ethereal](#ethereal) - default config, ECMAScript 5
+* [@ethereal-soft/eslint-config-ethereal/es2015](#ethereales2015) - ECMAScript 2015
+* [@ethereal-soft/eslint-config-ethereal/es2016](#ethereales2016) - ECMAScript 2016
+* [@ethereal-soft/eslint-config-ethereal/es2017](#ethereales2017) - ECMAScript 2017
+* [@ethereal-soft/eslint-config-ethereal/babel-es2015](#etherealbabel-es2015) - Babel ECMAScript 2015
+* [@ethereal-soft/eslint-config-ethereal/babel-es2016](#etherealbabel-es2016) - Babel ECMAScript 2016
+* [@ethereal-soft/eslint-config-ethereal/babel-es2017](#etherealbabel-es2017) - Babel ECMAScript 2017
+* [@ethereal-soft/eslint-config-ethereal/babel-stage-2](#etherealbabel-stage-2) - Babel ECMAScript Stage 2
+* [@ethereal-soft/eslint-config-ethereal/node](#etherealnode) - Node.js
+* [@ethereal-soft/eslint-config-ethereal/react](#etherealreact) - React.js/JSX
+* [@ethereal-soft/eslint-config-ethereal/jsdoc](#etherealjsdoc) - JSDoc
 
 ### ethereal
 
@@ -46,7 +46,7 @@ Requires:
 Installation:
 
 1. `npm install --save-dev eslint-config-ethereal eslint-plugin-import eslint`
-2. add `"extends": ["ethereal"]` to your `.eslintrc.json` config.
+2. add `"extends": ["@ethereal-soft/eslint-config-ethereal"]` to your `.eslintrc.json` config.
 
 ### ethereal/es2015
 
@@ -60,7 +60,7 @@ Requires:
 Installation:
 
 1. `npm install --save-dev eslint-config-ethereal eslint-plugin-import eslint`
-2. add `"extends": ["ethereal/es2015"]` to your `.eslintrc.json` config.
+2. add `"extends": ["@ethereal-soft/eslint-config-ethereal/es2015"]` to your `.eslintrc.json` config.
 
 ### ethereal/es2016
 
@@ -74,7 +74,7 @@ Requires:
 Installation:
 
 1. `npm install --save-dev eslint-config-ethereal eslint-plugin-import eslint`
-2. add `"extends": ["ethereal/es2016"]` to your `.eslintrc.json` config.
+2. add `"extends": ["@ethereal-soft/eslint-config-ethereal/es2016"]` to your `.eslintrc.json` config.
 
 ### ethereal/es2017
 
@@ -88,7 +88,7 @@ Requires:
 Installation:
 
 1. `npm install --save-dev eslint-config-ethereal eslint-plugin-import eslint`
-2. add `"extends": ["ethereal/es2017"]` to your `.eslintrc.json` config.
+2. add `"extends": ["@ethereal-soft/eslint-config-ethereal/es2017"]` to your `.eslintrc.json` config.
 
 ### ethereal/babel-es2015
 
@@ -103,7 +103,7 @@ Requires:
 Installation:
 
 1. `npm install --save-dev eslint-config-ethereal eslint-plugin-babel eslint-plugin-import eslint`
-2. add `"extends": ["ethereal/babel-es2015"]` to your `.eslintrc.json` config.
+2. add `"extends": ["@ethereal-soft/eslint-config-ethereal/babel-es2015"]` to your `.eslintrc.json` config.
 
 ### ethereal/babel-es2016
 
@@ -118,7 +118,7 @@ Requires:
 Installation:
 
 1. `npm install --save-dev eslint-config-ethereal eslint-plugin-babel eslint-plugin-import eslint`
-2. add `"extends": ["ethereal/babel-es2016"]` to your `.eslintrc.json` config.
+2. add `"extends": ["@ethereal-soft/eslint-config-ethereal/babel-es2016"]` to your `.eslintrc.json` config.
 
 ### ethereal/babel-es2017
 
@@ -133,7 +133,7 @@ Requires:
 Installation:
 
 1. `npm install --save-dev eslint-config-ethereal eslint-plugin-babel eslint-plugin-import eslint`
-2. add `"extends": ["ethereal/babel-es2017"]` to your `.eslintrc.json` config.
+2. add `"extends": ["@ethereal-soft/eslint-config-ethereal/babel-es2017"]` to your `.eslintrc.json` config.
 
 ### ethereal/babel-stage-2
 
@@ -148,7 +148,7 @@ Requires:
 Installation:
 
 1. `npm install --save-dev eslint-config-ethereal eslint-plugin-babel eslint-plugin-import eslint`
-2. add `"extends": ["ethereal/babel-stage-2"]` to your `.eslintrc.json` config.
+2. add `"extends": ["@ethereal-soft/eslint-config-ethereal/babel-stage-2"]` to your `.eslintrc.json` config.
 
 ### ethereal/node
 
@@ -157,7 +157,7 @@ ESLint rules for NodeJS.
 Installation:
 
 1. `npm install --save-dev eslint-config-ethereal eslint`
-2. add `"extends": ["ethereal/node"]` to your `.eslintrc.json` config.
+2. add `"extends": ["@ethereal-soft/eslint-config-ethereal/node"]` to your `.eslintrc.json` config.
 
 ### ethereal/react
 
@@ -171,7 +171,7 @@ Requires:
 Installation:
 
 1. `npm install --save-dev eslint-config-ethereal eslint-plugin-react eslint`
-2. add `"extends": ["ethereal/react"]` to your `.eslintrc.json` config.
+2. add `"extends": ["@ethereal-soft/eslint-config-ethereal/react"]` to your `.eslintrc.json` config.
 
 ### ethereal/jsdoc
 
@@ -184,7 +184,7 @@ Requires:
 Installation:
 
 1. `npm install --save-dev eslint-config-ethereal eslint`
-2. add `"extends": ["ethereal/jsdoc"]` to your `.eslintrc.json` config.
+2. add `"extends": ["@ethereal-soft/eslint-config-ethereal/jsdoc"]` to your `.eslintrc.json` config.
 
 ## Contributors
 

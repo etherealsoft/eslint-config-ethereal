@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
   env: {
     'es6': true,
@@ -7,6 +9,7 @@ module.exports = {
     './rules/best-practices',
     './rules/errors',
     './rules/import',
+    './rules/strict',
     './rules/style',
     './rules/variables',
     './rules/es2015'

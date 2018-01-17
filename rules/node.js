@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
 
   // These rules relate to code running in Node.js, or in browsers with CommonJS

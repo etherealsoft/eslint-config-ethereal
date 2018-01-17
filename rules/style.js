@@ -1,3 +1,5 @@
+'use strict';
+
 const constants = require('../lib/constants');
 
 module.exports = {
@@ -71,7 +73,7 @@ module.exports = {
 
     // Enforce the consistent use of either function declarations or expressions
     // http://eslint.org/docs/rules/func-style
-    'func-style': 'warn',
+    'func-style': 'off',
 
     // Enforce consistent line breaks inside function parentheses
     // https://eslint.org/docs/rules/function-paren-newline
@@ -255,7 +257,7 @@ module.exports = {
 
     // Enforce placing object properties on separate lines
     // http://eslint.org/docs/rules/object-property-newline
-    'object-property-newline': 'warn',
+    'object-property-newline': ['warn', { allowMultiplePropertiesPerLine: true }],
 
     // Enforce variables to be declared either together or separately in functions
     // http://eslint.org/docs/rules/one-var

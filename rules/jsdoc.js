@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
 
   // JSDoc related rules for eslint
