@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
 
   // These rules relate to possible syntax or logic errors

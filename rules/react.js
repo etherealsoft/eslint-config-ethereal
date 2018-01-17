@@ -1,3 +1,5 @@
+'use strict';
+
 const constants = require('../lib/constants');
 
 module.exports = {
@@ -26,11 +28,15 @@ module.exports = {
 
     // Forbid certain propTypes
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/forbid-prop-types.md
-    'react/forbid-prop-types': 'warn',
+    'react/forbid-prop-types': 'off',
 
     // Forbid foreign propTypes
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/forbid-foreign-prop-types.md
     'react/forbid-foreign-prop-types': 'warn',
+
+    // Prevent using this.state within  this.setState
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-access-state-in-setstate.md
+    'react/no-access-state-in-setstate': 'error',
 
     // Prevent usage of Array index in keys
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-array-index-key.md
@@ -231,7 +237,13 @@ module.exports = {
 
     // Enforce curly braces or disallow unnecessary curly braces in JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-curly-brace-presence.md
-    'react/jsx-curly-brace-presence': 'warn',
+    'react/jsx-curly-brace-presence': [
+      'warn',
+      {
+        props: 'never',
+        children: 'ignore'
+      }
+    ],
 
     // Enforce PascalCase for user-defined JSX components
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-pascal-case.md

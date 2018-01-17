@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
 
   // An eslint plugin companion to babel-eslint. babel-eslint does a great job at adapting eslint for use with Babel,

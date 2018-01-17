@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
 
   // Enforces semicolon after class properties

@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
 
   // These rules relate to ES6, also known as ES2015

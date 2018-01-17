@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
 
   // This plugin intends to support linting of ES2015+ (ES6+) import/export syntax,
