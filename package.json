@@ -1,6 +1,6 @@
 {
   "name": "@ethereal-soft/eslint-config-ethereal",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "Recommended eslint configurations.",
   "author": "Stephen M. Senesac <stephen.senesac@ethereal-soft.com>",
   "license": "MIT",
@@ -27,24 +27,21 @@
     "babel-stage-2.js",
     "node.js",
     "react.js",
+    "flowtype.js",
     "jsdoc.js"
   ],
   "engines": {
-    "node": ">=6.11.0"
+    "node": ">=6.x"
   },
-  "peerDependencies": {
-    "babel-eslint": "8.2.x",
-    "eslint": "4.15.x",
-    "eslint-plugin-babel": "4.1.x",
-    "eslint-plugin-import": "2.8.x",
-    "eslint-plugin-react": "7.5.x"
+  "dependencies": {
+    "babel-eslint": "8.2.2",
+    "eslint": "4.19.1",
+    "eslint-plugin-babel": "4.1.2",
+    "eslint-plugin-flowtype": "2.46.1",
+    "eslint-plugin-import": "2.9.0",
+    "eslint-plugin-react": "7.7.0"
   },
   "devDependencies": {
-    "babel-eslint": "~8.1.2",
-    "eslint": "~4.15.0",
-    "eslint-plugin-babel": "~4.1.2",
-    "eslint-plugin-import": "~2.8.0",
-    "eslint-plugin-react": "~7.5.1",
     "lodash": "~4.17.4",
     "mocha": "~4.1.0"
   },
@@ -53,6 +50,6 @@
     "lint:fix": "eslint --fix .",
     "test": "mocha ./tests/**/*.test.js",
     "check": "npm run lint && npm test",
-    "prepublish": "npm run check"
+    "prepublishOnly": "npm run check"
   }
 }
