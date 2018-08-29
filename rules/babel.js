@@ -9,12 +9,12 @@ module.exports = {
   rules: {
 
     // Disable eslint rules broken by babel-eslint
-    'object-curly-spacing': 'off',
     'new-cap': 'off',
     'no-invalid-this': 'off',
-
-    // Doesn't complain about export x from "mod"; or export * as x from "mod"
-    'babel/object-curly-spacing': ['warn', 'always'],
+    'object-curly-spacing': 'off',
+    'quotes': 'off',
+    'semi': 'off',
+    'no-unused-expressions': 'off',
 
     // Ignores capitalized decorators
     'babel/new-cap': 'warn',
@@ -22,7 +22,19 @@ module.exports = {
     // Disallow `this` keywords outside of classes or class-like objects
     'babel/no-invalid-this': 'error',
 
+    // Doesn't complain about export x from "mod"; or export * as x from "mod"
+    'babel/object-curly-spacing': ['warn', 'always'],
+
+    // Doesn't complain about JSX fragment shorthand syntax (<>foo</>;)
+    'babel/quotes': ['warn', 'single', {
+      avoidEscape: true,
+      allowTemplateLiterals: true
+    }],
+
     // Includes class properties
-    'babel/semi': 'error'
+    'babel/semi': 'error',
+
+    // Doesn't fail when using do expressions
+    'babel/no-unused-expressions': 'error'
   }
 };

@@ -42,6 +42,22 @@ module.exports = {
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-webpack-loader-syntax.md
     'import/no-webpack-loader-syntax': 'error',
 
+    // Forbid a module from importing itself
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-self-import.md
+    'import/no-self-import': 'error',
+
+    // Ensures that there is no resolvable path back to this module via its dependencies.
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-cycle.md
+    'import/no-cycle': 'error',
+
+    // Use this rule to prevent unnecessary path segments in import and require statements.
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-useless-path-segments.md
+    'import/no-useless-path-segment': 'error',
+
+    // Use this rule to prevent imports to folders in relative parent paths.
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-relative-parent-imports.md
+    'import/no-relative-parent-imports': 'error',
+
     // Report any invalid exports, i.e. re-export of the same name
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/export.md
     'import/export': 'error',
@@ -86,6 +102,10 @@ module.exports = {
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/first.md
     'import/first': 'warn',
 
+    // Ensure all exports appear after other statements
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/exports-last.md
+    'import/exports-last': 'error',
+
     // Report repeated import of the same module in multiple places
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-duplicates.md
     'import/no-duplicates': 'error',
@@ -117,6 +137,10 @@ module.exports = {
     // Forbid unassigned import
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-unassigned-import.md
     'import/no-unassigned-import': 'warn',
+
+    // Reports use of a default export as a locally named import.
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-named-default.md
+    'import/no-default-export': '',
 
     // Forbid named default exports
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-named-default.md
