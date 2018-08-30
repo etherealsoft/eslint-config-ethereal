@@ -10,9 +10,17 @@ module.exports = {
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/boolean-prop-naming.md
     'react/boolean-prop-naming': 'off',
 
+    // Prevent usage of button elements without an explicit type attribute
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/button-has-type.md
+    'react/button-has-type': 'warn',
+
     // Enforce all defaultProps have a corresponding non-required PropType
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/default-props-match-prop-types.md
     'react/default-props-match-prop-types': 'error',
+
+    // Enforce consistent usage of destructuring assignment of props, state, and context
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/destructuring-assignment.md
+    'react/destructuring-assignment': 'warn',
 
     // Prevent missing displayName in a React component definition
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/display-name.md
@@ -21,6 +29,10 @@ module.exports = {
     // Forbid certain props on Components
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/forbid-component-props.md
     'react/forbid-component-props': 'off',
+
+    // Forbid certain props on DOM Nodes
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/forbid-dom-props.md
+    'react/forbid-dom-props': 'off',
 
     // Forbid certain elements
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/forbid-elements.md
@@ -114,6 +126,10 @@ module.exports = {
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unknown-property.md
     'react/no-unknown-property': 'error',
 
+    // Prevent usage of UNSAFE_ methods
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unsafe.md
+    'react/no-unsafe': 'error',
+
     // NOTE: Rule is currently neutered by the fact that it cannot validate shape props, disabling until fixed
     // Prevent definitions of unused prop types
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unused-prop-types.md
@@ -175,13 +191,13 @@ module.exports = {
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/void-dom-elements-no-children.md
     'react/void-dom-elements-no-children': 'error',
 
-    // Enforce the consistent use of either double or single quotes in JSX attributes
-    // http://eslint.org/docs/rules/jsx-quotes
-    'jsx-quotes': 'warn',
-
     // Enforce boolean attributes notation in JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-boolean-value.md
     'react/jsx-boolean-value': ['error', 'never'],
+
+    // Enforce or disallow spaces inside of curly braces in JSX attributes and expressions.
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-child-element-spacing.md
+    'react/jsx-child-element-spacing': 'error',
 
     // Validate closing bracket location in JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-closing-bracket-location.md
@@ -198,6 +214,10 @@ module.exports = {
     // Enforce or disallow spaces around equal signs in JSX attributes
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-equals-spacing.md
     'react/jsx-equals-spacing': 'warn',
+
+    // Restrict file extensions that may contain JSX
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md
+    'react/jsx-filename-extension': 'off',
 
     // Configure the position of the first property
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-first-prop-new-line.md
@@ -219,6 +239,10 @@ module.exports = {
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-key.md
     'react/jsx-key': 'error',
 
+    // Limit maximum of props on a single line in JSX
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-max-props-per-line.md
+    'react/jsx-max-props-per-line': 'off',
+
     // No .bind() or Arrow Functions in JSX Props
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-bind.md
     'react/jsx-no-bind': 'error',
@@ -226,6 +250,10 @@ module.exports = {
     // Prevent comments from being inserted as text nodes
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-comment-textnodes.md
     'react/jsx-no-comment-textnodes': 'error',
+
+    // Prevent duplicate properties in JSX
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-duplicate-props.md
+    'react/jsx-no-duplicate-props': 'error',
 
     // Prevent usage of unwrapped JSX strings
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-literals.md
@@ -238,6 +266,10 @@ module.exports = {
     // Disallow undeclared variables in JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-undef.md
     'react/jsx-no-undef': 'error',
+
+    // This option limits every line in JSX to one expression each.
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-one-expression-per-line.md
+    'react/jsx-one-expression-per-line': 'off',
 
     // Enforce curly braces or disallow unnecessary curly braces in JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-curly-brace-presence.md
@@ -252,6 +284,14 @@ module.exports = {
     // Enforce PascalCase for user-defined JSX components
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-pascal-case.md
     'react/jsx-pascal-case': 'warn',
+
+    // Disallow multiple spaces between inline JSX props (fixable)
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-props-no-multi-spaces.md
+    'react/jsx-props-no-multi-spaces': 'warn',
+
+    // Enforce default props alphabetical sorting
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-sort-default-props.md
+    'react/jsx-sort-default-props': 'warn',
 
     // Enforce props alphabetical sorting
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-sort-props.md

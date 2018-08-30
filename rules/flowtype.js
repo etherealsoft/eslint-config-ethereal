@@ -7,11 +7,11 @@ module.exports = {
 
     // Enforces a particular annotation style of complex types.
     // https://github.com/gajus/eslint-plugin-flowtype#eslint-plugin-flowtype-rules-array-style-complex-type
-    'flowtype/array-style-complex-type': 'verbose',
+    'flowtype/array-style-complex-type': 'warn',
 
     // Enforces a particular array type annotation style of simple types.
     // https://github.com/gajus/eslint-plugin-flowtype#eslint-plugin-flowtype-rules-array-style-simple-type
-    'flowtype/array-style-simple-type': 'verbose',
+    'flowtype/array-style-simple-type': 'warn',
 
     // Enforces a particular style for boolean type annotations.
     // https://github.com/gajus/eslint-plugin-flowtype#eslint-plugin-flowtype-rules-boolean-style
@@ -31,7 +31,7 @@ module.exports = {
 
     // This rule requires an empty line after the Flow annotation.
     // https://github.com/gajus/eslint-plugin-flowtype#eslint-plugin-flowtype-rules-newline-after-flow-annotation
-    'flowtype/newline-after-flow-annotation': 'always',
+    'flowtype/newline-after-flow-annotation': 'warn',
 
     // Checks for duplicate properties in Object annotations.
     // https://github.com/gajus/eslint-plugin-flowtype#eslint-plugin-flowtype-rules-no-dupe-keys
@@ -83,7 +83,7 @@ module.exports = {
 
     // Requires all type declarations to be at the top of the file, after any import declarations.
     // https://github.com/gajus/eslint-plugin-flowtype#eslint-plugin-flowtype-rules-require-types-at-top
-    'flowtype/require-types-at-top': 'always',
+    'flowtype/require-types-at-top': 'warn',
 
     // This rule validates Flow file annotations.
     // https://github.com/gajus/eslint-plugin-flowtype#eslint-plugin-flowtype-rules-require-valid-file-annotation
@@ -119,7 +119,7 @@ module.exports = {
 
     // Enforces a particular style for type imports.
     // https://github.com/gajus/eslint-plugin-flowtype#eslint-plugin-flowtype-type-import-style
-    'flowtype/type-import-style': 'identifier',
+    'flowtype/type-import-style': ['warn', 'identifier'],
 
     // Enforces consistent spacing around union and intersection type separators (| and &).
     // https://github.com/gajus/eslint-plugin-flowtype#eslint-plugin-flowtype-rules-union-intersection-spacing

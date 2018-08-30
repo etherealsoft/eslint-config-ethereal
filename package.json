@@ -25,7 +25,7 @@
     "babel-es2016.js",
     "babel-es2017.js",
     "babel-stage-2.js",
-    "node.js",
+    "nodejs.js",
     "react.js",
     "flowtype.js",
     "jsdoc.js"
