@@ -7,5 +7,11 @@ module.exports = {
   parserOptions: { ecmaFeatures: { jsx: true } },
   plugins: [
     'react'
-  ]
+  ],
+  settings: {
+    react: {
+      version: '16.4',
+      flowVersion: '0.79'
+    }
+  }
 };
