@@ -2,7 +2,7 @@
   "root": true,
   "extends": [
     "./es2015.js",
-    "./node.js"
+    "./nodejs.js"
   ],
   "rules": {
     "no-sync": "off",

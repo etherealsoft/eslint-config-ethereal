@@ -131,6 +131,10 @@ module.exports = {
     // http://eslint.org/docs/rules/max-lines
     'max-lines': 'off',
 
+    // Enforce a maximum function length
+    // https://eslint.org/docs/rules/max-lines-per-function
+    'max-lines-per-function': 'off',
+
     // Enforce a maximum depth that callbacks can be nested
     // http://eslint.org/docs/rules/max-nested-callbacks
     'max-nested-callbacks': ['warn', constants.MAX_NESTING_DEPTH],

@@ -30,7 +30,7 @@ This package exports the following ESLint configurations.
 * [@ethereal-soft/eslint-config-ethereal/babel-es2016](#etherealbabel-es2016) - Babel ECMAScript 2016
 * [@ethereal-soft/eslint-config-ethereal/babel-es2017](#etherealbabel-es2017) - Babel ECMAScript 2017
 * [@ethereal-soft/eslint-config-ethereal/babel-stage-2](#etherealbabel-stage-2) - Babel ECMAScript Stage 2
-* [@ethereal-soft/eslint-config-ethereal/node](#etherealnode) - Node.js
+* [@ethereal-soft/eslint-config-ethereal/nodejs](#etherealnodejs) - Node.js
 * [@ethereal-soft/eslint-config-ethereal/react](#etherealreact) - React.js/JSX
 * [@ethereal-soft/eslint-config-ethereal/flowtype](#etherealflowtype) - Flow
 * [@ethereal-soft/eslint-config-ethereal/jsdoc](#etherealjsdoc) - JSDoc
@@ -99,13 +99,13 @@ Configuration:
 
 * add `"extends": ["@ethereal-soft/eslint-config-ethereal/babel-stage-2"]` to your `.eslintrc.json` config.
 
-### ethereal/node
+### ethereal/nodejs
 
 ESLint rules for NodeJS.
 
 Configuration:
 
-* add `"extends": ["@ethereal-soft/eslint-config-ethereal/node"]` to your `.eslintrc.json` config.
+* add `"extends": ["@ethereal-soft/eslint-config-ethereal/nodejs"]` to your `.eslintrc.json` config.
 
 ### ethereal/react
 
