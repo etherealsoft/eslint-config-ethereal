@@ -52,7 +52,7 @@ module.exports = {
 
     // Use this rule to prevent unnecessary path segments in import and require statements.
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-useless-path-segments.md
-    'import/no-useless-path-segment': 'error',
+    'import/no-useless-path-segments': 'error',
 
     // Use this rule to prevent imports to folders in relative parent paths.
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-relative-parent-imports.md
@@ -140,7 +140,7 @@ module.exports = {
 
     // Reports use of a default export as a locally named import.
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-named-default.md
-    'import/no-default-export': '',
+    'import/no-default-export': 'off',
 
     // Forbid named default exports
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-named-default.md
@@ -148,6 +148,14 @@ module.exports = {
 
     // Forbid anonymous values as default exports
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-anonymous-default-export.md
-    'import/no-anonymous-default-export': 'off'
+    'import/no-anonymous-default-export': 'off',
+
+    // Prefer named exports to be grouped together in a single export declaration
+    // https://github.com/benmosher/eslint-plugin-import/blob/HEAD/docs/rules/group-exports.md
+    'import/group-exports': 'off',
+
+    // Enforce a leading comment with the webpackChunkName for dynamic imports
+    // https://github.com/benmosher/eslint-plugin-import/blob/HEAD/docs/rules/dynamic-import-chunkname.md
+    'import/dynamic-import-chunkname': 'off'
   }
 };
