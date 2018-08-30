@@ -12,13 +12,13 @@ build:
   stage: build
   script:
     - chmod +x ./scripts/build.sh
-    ./scripts/build.sh
+    - ./scripts/build.sh
 
 test:
   stage: test
   script:
     - chmod +x ./scripts/test.sh
-    ./scripts/test.sh
+    - ./scripts/test.sh
 
 deploy:
   stage: deploy
@@ -26,4 +26,4 @@ deploy:
     - master
   script:
     - chmod +x ./scripts/deploy.sh
-    ./scripts/deploy.sh
+    - ./scripts/deploy.sh
