@@ -6,7 +6,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/etherealsoft/eslint-config-ethereal.git"
+    "url": "https://gitlab.com/ethereal-soft/eslint-config-ethereal.git"
   },
   "keywords": [
     "eslint",
