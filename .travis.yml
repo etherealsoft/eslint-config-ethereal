@@ -1,0 +1,28 @@
+language: node_js
+
+stages:
+  - lint
+  - test
+  - name: deploy
+    if: branch = master
+
+cache:
+  directories:
+    - node_modules
+
+jobs:
+  include:
+    - stage: lint
+      script:
+        - chmod +x ./scripts/lint.sh
+        - ./scripts/test.sh
+    - stage: test
+      script:
+        - chmod +x ./scripts/test.sh
+        - ./scripts/test.sh
+    - stage: deploy
+      script:
+        - chmod +x ./scripts/deploy.sh
+        - ./scripts/deploy.sh
+
+
