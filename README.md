@@ -1,6 +1,6 @@
-![npm](https://img.shields.io/npm/v/@ethereal-soft/eslint-config-ethereal.svg?style=flat-square)
-![license](https://img.shields.io/npm/l/@ethereal-soft/eslint-config-ethereal.svg?style=flat-square)
-![build](https://img.shields.io/travis/etherealsoft/eslint-config-ethereal/master.svg?style=flat-square)
+![npm](https://img.shields.io/npm/v/@ethereal-soft/eslint-config-ethereal.svg)
+![license](https://img.shields.io/npm/l/@ethereal-soft/eslint-config-ethereal.svg)
+![build](https://travis-ci.com/etherealsoft/eslint-config-ethereal.svg?branch=master)
 
 ## Synopsis
 

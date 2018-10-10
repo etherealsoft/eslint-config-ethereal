@@ -1,6 +1,6 @@
 {
   "name": "@ethereal-soft/eslint-config-ethereal",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "Recommended eslint configurations.",
   "author": "Stephen M. Senesac <stephen.senesac@ethereal-soft.com>",
   "license": "MIT",
