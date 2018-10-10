@@ -15,7 +15,7 @@ jobs:
     - stage: lint
       script:
         - chmod +x ./scripts/lint.sh
-        - ./scripts/test.sh
+        - ./scripts/lint.sh
     - stage: test
       script:
         - chmod +x ./scripts/test.sh
